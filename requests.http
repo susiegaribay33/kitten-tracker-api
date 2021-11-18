@@ -1,1 +1,22 @@
 GET http://localhost:3000/kittens
+
+###
+POST http://localhost:3000/kittens
+content-type: application/json
+
+{
+  "name": "Blue",
+  "color": "blue",
+  "age": 7
+}
+###
+GET http://localhost:3000/kittens/1
+
+###
+
+PATCH http://localhost:3000/kittens/2
+Content-Type: application/json
+
+{
+  "age": 6
+}
